@@ -18,7 +18,7 @@
 
 
 
-    <title>Lista Bootstrap</title>
+    <title>Input Group</title>
 
 
 </head>
@@ -26,134 +26,66 @@
 
 <body>
 
-  <h1 class="display-4 text-center">Lista com Bootstrap</h1>
+  <h1 class="display-4 text-center">Input Group</h1>
+  <h3>Prepand</h3>
 
-<h4>[class="list-group / list-group-item (active/disabled)]</h4>
+  <div class="input-group mb-3">
 
-<ul class="list-group">
-    <li class="list-group-item ">Cras justo odio</li>
-    <li class="list-group-item ">Dapibus ac facilisis in</li>
-    <li class="list-group-item">Morbi leo risus</li>
-    <li class="list-group-item">Porta ac consectetur ac</li>
-    <li class="list-group-item">Vestibulum at eros</li>
-  </ul>
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">@</span>
+    </div>
 
-  <!-- --------------LISTA COM FLASH------------- -->
-  <h1 class="display-4 text-center">Lista com flush </h1>
-  <h4>[list-group list-group-flush]</h4>
-
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">Cras justo odio</li>
-    <li class="list-group-item">Dapibus ac facilisis in</li>
-    <li class="list-group-item">Morbi leo risus</li>
-    <li class="list-group-item">Porta ac consectetur ac</li>
-    <li class="list-group-item">Vestibulum at eros</li>
-  </ul>
-
-  <!-- --------------LISTA COM LINK------------- -->
-  <h1 class="display-4 text-center">Lista com link </h1>
-  <h4>[list-group list-group-flush]</h4>
-
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">
-        <a href="">Cras justo odio</a>
-    </li>
-
-    <li class="list-group-item">
-        <a href="">Dapibus ac facilisis in</a>
-    </li>
-
-    <li class="list-group-item">
-        <a href="">Morbi leo risus</a>
-    </li>
-
-    <li class="list-group-item">
-        <a href="">Porta ac consectetur ac</a>
-    </li>
-
-    <li class="list-group-item">
-        <a href="">Vestibulum at eros</a>
-    </li>
-  </ul>
-<!-- ---------APLICANDO CORES NA LISTA---------- -->
-
-  <h1 class="display-4 text-center">Cores na Lista</h1>
-
-<h4>[]</h4>
-
-<ul class="list-group">
-    <li class="list-group-item ">Normal</li>
-
-    <li class="list-group-item list-group-item-primary ">Secondary</li>
-
-    <li class="list-group-item list-group-item-secondary">Secondary</li>
-
-    <li class="list-group-item list-group-item-success">Success</li>
-
-    <li class="list-group-item list-group-item-danger">Danger</li>
-
-    <li class="list-group-item list-group-item-warning">Warning</li>
-
-    <li class="list-group-item list-group-item-info">Info</li>
-
-    <li class="list-group-item list-group-item-light">Light</li>
-
-    <li class="list-group-item list-group-item-dark">Dark</li>
-  </ul>
+    <input type="text" class="form-control" placeholder="Usuário" aria-label="Usuário" aria-describedby="basic-addon1">
 
 
-<!-- --------- APLICANDO BADGE --------- -->
-
-<h1 class="display-4 text-center">Badge</h1>
-
-<h4>[ &lt;span class="badge &gt;</h4>
-
-<ul class="list-group">
-    <li class="list-group-item ">Caixa de Entrada
-        <span class="badge bg-info">120</span>
-    </li>
-
-    <li class="list-group-item ">Span
-        <span class="badge bg-danger p-1 text-white">1200</span>
-    </li>
-
-    <li class="list-group-item ">Secondary</li>
-
-    <li class="list-group-item ">Success</li>
-
-    <li class="list-group-item ">Danger</li>
-
-    <li class="list-group-item ">Warning</li>
-
-    <li class="list-group-item ">Info</li>
-
-    <li class="list-group-item ">Light</li>
-
-    <li class="list-group-item ">Dark</li>
-  </ul>
-
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item active" aria-current="page">Home</li>
-    </ol>
-  </nav>
+  </div>
   
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="#">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Biblioteca</li>
-    </ol>
-  </nav>
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Recipiente para nickname" aria-label="Recipiente para nickname" aria-describedby="basic-addon2">
+    <div class="input-group-append">
+      <span class="input-group-text" id="basic-addon2">@exemplo.com</span>
+    </div>
+  </div>
   
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="#">Home</a></li>
-      <li class="breadcrumb-item"><a href="#">Biblioteca</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Dados</li>
-    </ol>
-  </nav>
-    
+  <label for="basic-url">Sua tão honrada URL</label>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon3">https://exemplo.com.br/users/</span>
+    </div>
+    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+  </div>
+  
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text">R$</span>
+    </div>
+    <input type="text" class="form-control" aria-label="Quantia">
+    <div class="input-group-append">
+      <span class="input-group-text">.00</span>
+    </div>
+  </div>
+  
+  <h3>Ckeckbox & Radio</h3>
 
+  <!-- CHECKBOX -->
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <div class="input-group-text">
+        <input type="checkbox" aria-label="Chebox para permitir input text">
+      </div>
+    </div>
+    <input type="text" class="form-control" aria-label="Input text com checkbox">
+  </div>
+  
+  <!-- RADIO -->
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <div class="input-group-text">
+        <input type="radio" aria-label="Botão radio para acompanhar input text">
+      </div>
+    </div>
+    <input type="text" class="form-control" aria-label="Input text com botão radio">
+  </div>
 
     
 
